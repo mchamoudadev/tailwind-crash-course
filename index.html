@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tailwind Css Crash Course</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					fontFamily: {
+						playfair: ["Playfair Display", "serif"],
+					},
+				},
+			};
+		</script>
+	</head>
+	<body>
+		<!-- colors -->
+		<!-- background colors -->
+		<p class="bg-green-800 text-white">Tailwind Css is more than just a css</p>
+		<p class="bg-blue-200">Tailwind Css is more than just a css</p>
+		<p class="bg-red-200">Tailwind Css is more than just a css</p>
+		<p class="bg-indigo-500">Tailwind Css is more than just a css</p>
+		<p class="bg-slate-800 text-green-400">
+			Tailwind Css is more than just a css
+		</p>
+		<!-- border colors -->
+		<input type="text" class="border border-green-300" />
+		<input type="text" class="border border-red-300" />
+		<!-- arbitrary colors -->
+		<div class="text-[#777879] bg-[#645458]">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil
+			dolorum architecto reprehenderit, natus eius fugit deserunt totam
+			necessitatibus nemo. Natus magni esse repellendus minus at, ea alias unde
+			nisi!
+		</div>
+		<!-- spaces and containers -->
+		<!-- breakpoint for container-->
+		<!-- 
+			container none 100%
+			sm (640px)   max-width : 640px
+			md (768px)   max-width : 768px
+			lg (1024px)  max-width : 1024px
+			xl (1280px)  max-width : 1280px
+			2xl (1536px) max-width : 1536px
+		-->
+
+		<!-- margin -->
+		<p class="m-5 bg-green-100">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa
+			odit fugit suscipit error excepturi pariatur id. Ab in earum aliquid fuga
+			alias, consequatur eligendi eveniet ipsum nobis explicabo vel?
+		</p>
+
+		<p class="mx-5 my-10 bg-red-100">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius culpa
+			blanditiis facilis
+		</p>
+		<!-- padding -->
+		<p class="bg-indigo-200 p-5">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ratione
+			architecto dolorem eaque
+		</p>
+
+		<p class="px-2 py-10 bg-slate-100">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+			suscipit a
+		</p>
+		<!-- space-x -->
+		<div class="bg-green-100 flex space-x-2">
+			<p class="bg-red-50">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sit!
+			</p>
+			<p class="bg-slate-100">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ut!
+			</p>
+			<p class="bg-gray-200">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ut!
+			</p>
+		</div>
+		<!-- space-y -->
+		<div class="bg-green-100 space-y-5 mt-5">
+			<p class="bg-red-50">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sit!
+			</p>
+			<p class="bg-slate-100">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ut!
+			</p>
+			<p class="bg-gray-200">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, ut!
+			</p>
+		</div>
+		<!-- typography-->
+
+		<!-- font size -->
+		<p class="text-sm">Tailwind Crash Course</p>
+		<p class="text-sm">Tailwind Crash Course</p>
+		<p class="text-base">Tailwind Crash Course</p>
+		<p class="text-lg">Tailwind Crash Course</p>
+		<p class="text-xl">Tailwind Crash Course</p>
+		<p class="text-2xl">Tailwind Crash Course</p>
+		<p class="text-6xl">Tailwind Crash Course</p>
+		<!-- font family -->
+		<p class="font-playfair">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quae
+			fuga natus esse aut, accusantium ea nemo cum vel laudantium, non,
+			architecto repellendus sint? Natus modi officiis ex quis cum.
+		</p>
+		<!-- font weight -->
+		<p class="font-light">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, harum.
+		</p>
+		<p class="font-bold">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, harum.
+		</p>
+		<p class="font-medium">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, harum.
+		</p>
+		<p class="font-semibold">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, harum.
+		</p>
+		<p class="font-extrabold">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, harum.
+		</p>
+		<!-- text alignment -->
+		<p class="text-left">Lorem ipsum dolor sit amet.</p>
+		<p class="text-center">Lorem ipsum dolor sit amet.</p>
+		<p class="text-right">Lorem ipsum dolor sit amet.</p>
+		<!-- width and height -->
+
+		<!-- width -->
+		<!-- 4 = 1rem = 16px -->
+		<div class="w-4">width in Tailwind</div>
+		<div class="w-10">width in Tailwind</div>
+		<!-- percentages -->
+		<div class="bg-red-100 w-1/2">width in Tailwind</div>
+		<div class="bg-green-100 w-1/3">width in Tailwind</div>
+		<div class="bg-slate-100 w-1/4">width in Tailwind</div>
+
+		<!-- width of the view port -->
+		<div class="bg-gray-100 w-screen">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+			dicta?
+		</div>
+		<div class="bg-red-100 w-full">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+			dicta?
+		</div>
+		<!-- max width -->
+		<div class="max-w-sm bg-green-200 mx-auto">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, minima?
+		</div>
+		<div class="max-w-md bg-red-200 mx-auto">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, minima?
+		</div>
+		<div class="max-w-lg bg-blue-200 mx-auto">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, minima?
+		</div>
+		<!-- arbitrary sizes -->
+		<div class="max-w-[100px] mx-auto bg-slate-200">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+			cupiditate?
+		</div>
+		<!-- height -->
+		<div class="bg-blue-400 h-screen"></div>
+		<div class="bg-red-400 h-screen"></div>
+		<!-- background and shadows -->
+		<div
+			class="h-96 bg-no-repeat bg-cover"
+			style="
+				background-image: url('https://images.pexels.com/photos/460775/pexels-photo-460775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+			"
+		></div>
+		<!-- gradient colors -->
+		<div
+			class="w-screen h-32 bg-gradient-to-l from-indigo-400 to-cyan-100"
+		></div>
+		<!-- shadows -->
+		<div class="my-2 w-screen space-y-4 mx-auto">
+			<div class="w-64 h-24 bg-white shadow">
+				<p class="text-sm">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</div>
+			<div class="w-64 h-24 bg-white shadow-sm">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="w-64 h-24 bg-white shadow-lg">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="w-64 h-24 bg-white shadow-xl">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="w-64 h-24 bg-white shadow-2xl">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<!-- break points classes and media queries -->
+		<div
+			class="h-screen bg-green-100 sm:bg-green-300 md:bg-green-500 lg:bg-green-700 xl:bg-green-900 2xl:bg-indigo-400"
+		></div>
+		<!-- flex box -->
+
+		<div class="flex h-sm max-w-2xl mx-auto items-center justify-between">
+			<a href="">Logo</a>
+			<ul class="flex space-x-4">
+				<li>Home</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+
+		<div class="flex flex-col w-screen h-sm items-center justify-center">
+			<div class="bg-green-100 p-10 border border-indigo-400">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur,
+				voluptatem.
+			</div>
+			<div class="bg-green-100 p-10 border border-indigo-400">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur,
+				voluptatem.
+			</div>
+			<div class="bg-green-100 p-10 border border-indigo-400">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur,
+				voluptatem.
+			</div>
+		</div>
+		<!-- grid -->
+
+		<div class="w-screen grid gap-2 grid-cols-3 my-10">
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="grid bg-red-200 row-span-4 bg-green-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+			<div class="bg-red-200">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+				ipsum.
+			</div>
+		</div>
+	</body>
+</html>
